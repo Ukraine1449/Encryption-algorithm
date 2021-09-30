@@ -1,11 +1,17 @@
 def getSeed(passed):
     first = "AaBbCcDdEeFfGgHhIiJjKkLlMm"
+    second = "NnOoPpQqRrSsTt"
+    third = "UuVvWw"
     num = 0
     for i in passed:
         if first.__contains__(i):
-            num = num + 70
+            num = num + 28
+        elif second.__contains__(i):
+            num = num + 500
+        elif third.__contains__(i):
+            num = num + 69
         else:
-            num = num + 90
+            num = num + 64
     return num
 
 def antiPop(list):
